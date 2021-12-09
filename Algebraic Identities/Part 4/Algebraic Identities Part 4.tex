@@ -1,0 +1,233 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[english]{babel}
+% \usepackage{ntheorem}
+% \usepackage{theoremref}
+\usepackage{xifthen}
+\usepackage{relsize}
+\usepackage[svgnames]{xcolor} % You can find CSS colours here https://www.w3schools.com/cssref/css_colors.asp
+
+\title{Algebraic Identities Part 4}
+\author{Rasmus Söderhielm}
+\date{December 2021}
+
+% \parindent 20pt
+% \parskip 1em
+
+\definecolor{MainColor}{hsb}{0, 0.8, 0.65}
+\definecolor{SubColor}{hsb}{0.01, 0.90, 0.45}
+% \colorlet{SubColor}{Teal}
+
+% switch implementation from https://tex.stackexchange.com/questions/64131/implementing-switch-cases
+\newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
+\newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite...
+\newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
+
+\newcommand{\hint}{\\\textcolor{SubColor}{{H}{\relsize{-1}INT:}}\ }
+
+
+
+\renewcommand*{\thesubsection}{\textcolor{MainColor}{\Alph{subsection}}}
+\newcommand{\solution}{\subsubsection*{\textcolor{MainColor}{Solution}}}
+
+\newcounter{theoremcounter}
+% \newcounter{corollary}
+
+\newtheoremstyle{maintheorem}% name of the style to be used
+	{\topsep}% measure of space to leave above the theorem. E.g.: 3pt
+	{\topsep}% measure of space to leave below the theorem. E.g.: 3pt
+	{\itshape}% name of font to use in the body of the theorem
+	{0pt}% measure of space to indent
+	{\color{SubColor}\bfseries}% name of head font
+	{.}% punctuation between head and body
+	{ }% space after theorem head; " " = normal interword space
+	{\thmname{#1}\thmnumber{ #2}\textnormal{\thmnote{ (#3)}}}
+  
+% \newtheoremstyle{mainsolution}% name of the style to be used
+% 	{\topsep}% measure of space to leave above the theorem. E.g.: 3pt
+% 	{\topsep}% measure of space to leave below the theorem. E.g.: 3pt
+% 	{\normalfont}% name of font to use in the body of the theorem
+% 	{0pt}% measure of space to indent
+% 	{\color{SubColor}\bfseries}% name of head font
+% 	{}% punctuation between head and body
+% 	{ }% space after theorem head; " " = normal interword space
+% 	{\thmname{#1}\thmnumber{ #2}\textnormal{\thmnote{ (#3)}}}
+
+\theoremstyle{maintheorem}
+\newtheorem{theorem}[theoremcounter]{\textcolor{SubColor}{Theorem}}
+\newtheorem{corollary}{\textcolor{SubColor}{Corollary}}
+
+% \theoremstyle{mainsolution}
+% \newtheorem*{solution}{Solution}
+
+
+
+\newcommand{\size}[2]{
+	\begin{switch}{#1}
+		\case{1}{#2}
+		\case{2}{\bigl#2}
+		\case{3}{\Bigl#2}
+		\case{4}{\biggl#2}
+		\case{5}{\Biggl#2}
+	\end{switch}
+}
+
+\setlength{\parskip}{0.8em}
+
+\begin{document}
+
+\linespread{1.5}\selectfont
+
+\maketitle
+
+\section*{\color{MainColor}Problems}
+
+\subsection{
+	\normalfont
+	Let $a, b$ and $c$ be real numbers where $a \neq b$. If $c^3 = b^3 + b^3 + 3abc$, prove that $c=a+b$.
+}
+
+\solution
+
+During the last lecture we learned about the following theorem and it's corollary.
+\begin{theorem}\label{thm1}
+	Let $a, b$ and $c$ be real numbers.
+	\[ a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca) \]
+\end{theorem}
+\begin{corollary}\label{cor1}
+	Let $a, b$ and $c$ be real numbers.
+
+	If $a^3 + b^3 + c^3 = 3abc$, then either $a = b = c$ or $a + b + c = 0$ is true.
+\end{corollary}
+
+We start by rearrange the equation $ c^3 = b^3 + b^3 + 3abc $ into the following form:
+\[ -a^3 - b^3 + c^3 = 3abc \]
+This equation is now in the form of Corollary \ref{cor1}. Therefore we can conclude that either $-a = -b = -c$ or $-a - b + c = 0$ is true.
+
+We know that $ -a = -b = -c $ is false since $a \neq b$. This leaves us with $-a - b + c = 0$, which we can easily rearrange into the form of $c = a + b$, thus proving the problem.
+
+\subsection{
+	\normalfont
+	Let $x$, $y$ and $z$ be nonzero real numbers such that
+	\[x + y + z = a,\ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = \frac{1}{a}\]
+	Show that at least one of $x$, $y$, $z$ is equal to $a$.
+}
+
+\solution
+
+We begin by recognizing that either $a - x$, $a - y$ or $a - z$ is equal to zero. Thus we can rephrase the problem into proving that $ (a - x)(a - y)(a - z) = 0 $.
+
+Using the theorem we learned during the lesson we can expand the following expression.
+\[(a-x)(a-y)(a-z) = a^3 - (x + y + z)a^2 + (xy + yz + zx)a - xyz\]
+Substituting $a$ for $ x + y + z $, the expression $a^3 - a^3$ cancels out.
+\[(a-x)(a-y)(a-z) = (xy + yz + zx)a - xyz\]
+We divide $xy + yz + zx$ by $xyz$ and multiply it by $xyz$ to cancel out the division.
+\[(a-x)(a-y)(a-z) = xyz\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right)a - xyz\]
+Now we can substitute $ \frac{1}{a} $ for $ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} $ we get $ xyz\frac{a}{a} - xyz $. The fraction $ \frac{a}{a} $ cancels out, leading to $xyz - xyz$ also cancelling out.
+This leaves us with
+\[(a-x)(a-y)(a-z) = 0\]
+This proves that either $a - x$, $a - y$ or $a - z$ is equal to zero and therefore either $a$, $b$ or $c$ is equal to $a$.
+
+\subsection{
+	\normalfont
+	Solve the following system:
+	\begin{align*}
+		x + y + z       & = 10   \\
+		x^2 + y^2 + z^2 & = 100  \\
+		x^3 + y^3 + z^3 & = 1000
+	\end{align*}
+}
+
+\solution
+
+During a past lecture we learned about the following theorem:
+\begin{theorem}\label{thm2}
+	Let $a, b$ and $c$ be real numbers.
+	\[ (a + b + c)^3 = a^3 + b^3 + c^3 + 3(a + b)(b + c)(c + a) \]
+\end{theorem}
+
+Let's begin by writing out Theorem \ref{thm2}.
+\[ (a + b + c)^3 = a^3 + b^3 + c^3 + 3(a + b)(b + c)(c + a) \]
+We can substitute $10$ and $1000$ for $x + y + z$ and $x^3 + y^3 + z^3$ respectively. This leaves us with $1000 = 1000 + 3(a + b)(b + c)(c + a)$,
+which we can simplify to $0 = (a + b)(b + c)(c + a)$.
+
+Therefore we conclude that either $x + y = 0$ or $y + z = 0$ or $z + x = 0$ is true.
+Since the sum of one of the pairs of variables is equal to $0$, we conclude that the third variable is equal to $10$ using the fact that $x + y + z = 10$.
+
+To find the values of the other pair of variables let's temporarily assume that $z$ is equal to $10$. Inserting this value into the equation $x^2 + y^2 + z^2 = 100$, it then simplifies to $x^2 + y^2 = 0$.
+Because the exponents in the terms $x^2$ and $y^2$ are both even, they are also nonnegative. Since they are nonnegative and add up to $0$, they both need to be equal to $0$.
+
+From this we can conclude that there are three different solutions to the original system:
+\begin{align*}
+	x & = 10 &  &           & y & = 10 &  &           & z & = 10 \\
+	y & = 0  &  & \text{or} & z & = 10 &  & \text{or} & x & = 0  \\
+	z & = 0  &  &           & x & = 10 &  &           & y & = 0
+\end{align*}
+
+\subsection{
+	\normalfont
+	Let $a, b$ and $c$ be real numbers such that $a + b + c = 0$. Show that $2(a^5 + b^5 + c^5) = 5abc(a^2 + b^2 + c^2)$.
+}
+
+\solution
+
+Since $a + b + c = 0$, we can derive the following equation using Theorem \ref{thm1}, mentioned in Problem A.
+\begin{equation}\label{eq1}
+	abc = \frac{1}{3}(a^3 + b^3 + c^3)
+\end{equation}
+
+Let's consider the expression $5abc(a^2 + b^2 + c^2)$.
+Using Equation \ref{eq1} we substitute $\frac{1}{3}(a^3 + b^3 + c^3)$ for $abc$, resulting in the expression $\frac{5}{3}(a^3 + b^3 + c^3)(a^2 + b^2 + c^2)$.
+After expanding and factorising we are left with the following expression.
+\[ \frac{5}{3}\bigl(a^5 + b^5 + c^5 + a^2b^2(a + b) + b^2c^2(b + c) + c^2a^2(c + a)\bigr) \]
+
+Since $a + b + c = 0$, we can derive the following three equations.
+\begin{align*}
+	-a & = b + c \\
+	-b & = c + a \\
+	-c & = a + b
+\end{align*}
+Using these equations we substitute $-a, -b$ and $-c$ into our expression to get the expression $\frac{5}{3}(a^5 + b^5 + c^5 - a^2b^2c - ab^2c^2 - a^2bc^2)$.
+After factorising $abc$ we are left with the following result.
+\[ \frac{5}{3}\bigl(a^5 + b^5 + c^5 - abc(ab + bc + ca)\bigr) \]
+
+We learned about the following theorem during a past lecture.
+\begin{theorem}\label{thm3}
+	Let $a, b$ and $c$ be real numbers.
+	\[ (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) \]
+\end{theorem}
+Consider the equation $a + b + c = 0$. This means that the equation $(a + b + c)^2 = 0$ is also true.
+Using Theorem \ref{thm3} we can modify the equation to get the equation $a^2 + b^2 + c^2 + 2(ab + bc + ca) = 0$, which after rearranging gives us the following result.
+\[ ab + bc + ca = -\frac{1}{2}\size2(a^2 + b^2 + c^2\size2) \]
+
+Returning to the previous expression we can now substitute $-\frac{1}{2}\size2(a^2 + b^2 + c^2\size2)$ for $ab + bc + ca$,
+giving us the following result.
+\[ \frac{5}{3}\size3(a^5 + b^5 + c^5 + \frac{1}{2}abc\size2(a^2 + b^2 + c^2\size2)\size3) \]
+
+As we derived this expression from the previous expression $5abc\size2(a^2 + b^2 + c^2\size2)$, the following equation holds true.
+\begin{equation*}
+	5abc\size2(a^2 + b^2 + c^2\size2) = \frac{5}{3}\size2(a^5 + b^5 + c^5\size2) + \frac{5}{6}abc\size2(a^2 + b^2 + c^2\size2)
+\end{equation*}
+
+Multiplying the preceding equation by $\frac{6}{5}$ and then simplifying it gives us the resulting equation $2(a^5 + b^5 + c^5) = 5abc(a^2 + b^2 + c^2)$,
+which is the equation we set out to prove.
+
+
+\subsection{
+	\normalfont
+	Let $a, b$ and $c$ be nonzero real numbers such that $a + b + c = 0$ and $a^3 + b^3 + c^3 = a^5 + b^5 + c^5$.
+	Determine the exact value of $a^2 + b^2 + c^2$.
+	\hint Expand $(a^2 + b^2 + c^2)(a^3 + b^3 + c^3)$
+}
+
+\solution
+
+Let's do as the problem asks and begin expanding the expression $(a^2 + b^2 + c^2)(a^3 + b^3 + c^3)$.
+This results in the following expression.
+\[ a^5 + b^5 + c^5 + a^3b^2 + a^2b^3 + b^3c^2 + b^2c^3 + c^3a^2 + c^2a^3 \]
+After substituting $a^3 + b^3 + c^3$ for $a^5 + b^5 + c^5$ and factorising we are left with the following expression.
+
+\end{document}
+
