@@ -6,7 +6,7 @@
 
 \title{Algebraic Identities Part 4}
 \author{Rasmus Söderhielm}
-\date{November 2021}
+\date{December 2021}
 
 % \parindent 20pt
 % \parskip 1em
@@ -16,15 +16,22 @@
 	\textbf{#1:}\\
 }
 
+
+
 \renewcommand*{\thesubsection}{\Alph{subsection}}
 
 \newtheorem{theorem}{Theorem}
 
+\setlength{\parskip}{0.8em}
+
 \begin{document}
+
+\linespread{1.5}\selectfont
 
 \maketitle
 
 \section{Problems}
+
 
 %\begin{enumerate}[label=\alph*.]
 %    \item something
@@ -40,31 +47,33 @@
 	Let $a, b, c \in \mathbb{R} $ where $a \neq b$. If $c^3 = b^3 + b^3 + 3abc$, prove that $c=a+b$.
 }
 
-\begin{proof}
-	\begin{theorem}
-		Let $ a, b, c \in \mathbb{R} $ If $ a^3 + b^3 + c^3 = 3abc \Leftrightarrow a = b = c $ or $ a + b + c = 0 $
-	\end{theorem}
+\begin{theorem}{lem}{little lemma} This is a small lemma. \end{theorem}
+It follows from \ref{little lemma} that we have
+\begin{theorem*}{thm} The main result. \end{theorem*}
 
-	\begin{align*}
-		b^3 + b^3 + 3abc & = c^3   \\
-		b^3 + b^3 - c^3  & = -3abc \\
-		-a^3 - b^3 + c^3 & = 3abc
-	\end{align*}
-	Using theorem 1 we can conclude
-	\begin{align*}
-		-a = -b = c                 &  & or &  & -a - b + c & = 0     \\
-		\text{which is false since} &  &    &  & c          & = a + b \\
-		a \neq b
-	\end{align*}
-\end{proof}
+\begin{theorem}
+	Let $ a, b, c \in \mathbb{R} $ If $ a^3 + b^3 + c^3 = 3abc \Leftrightarrow a = b = c $ or $ a + b + c = 0 $
+\end{theorem}
+
+\begin{align*}
+	b^3 + b^3 + 3abc & = c^3   \\
+	b^3 + b^3 - c^3  & = -3abc \\
+	-a^3 - b^3 + c^3 & = 3abc
+\end{align*}
+Using theorem 1 we can conclude
+\begin{align*}
+	-a = -b = c                 &  & or &  & -a - b + c & = 0     \\
+	\text{which is false since} &  &    &  & c          & = a + b \\
+	a \neq b
+\end{align*}
 
 \subsection{
 	\normalfont
 	Let $x$, $y$ and $z$ be non-zero real numbers such that
 	\[x + y + z = a,\ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = \frac{1}{a}\]
-	Show that at least one of $x$, $y$, $z$ is equal to $a$.	
+	Show that at least one of $x$, $y$, $z$ is equal to $a$.
 }
-\linespread{1.5}\selectfont
+
 We begin by recognizing that either $a - x$, $a - y$ or $a - z$ is equal to zero. Thus we can rephrase the problem into proving that $ (a - x)(a - y)(a - z) = 0 $.
 
 Using the theorem we learned during the lesson we can expand the following expression.
@@ -78,7 +87,15 @@ This leaves us with
 \[(a-x)(a-y)(a-z) = 0\]
 This proves that either $a - x$, $a - y$ or $a - z$ is equal to zero and therefore either $a$, $b$ or $c$ is equal to $a$.
 
-
+\subsection{
+	\normalfont
+	Solve the following system:
+	\begin{align*}
+		x + y + z       & = 10   \\
+		x^2 + y^2 + z^2 & = 100  \\
+		x^3 + y^3 + z^3 & = 1000
+	\end{align*}
+}
 
 \end{document}
 
