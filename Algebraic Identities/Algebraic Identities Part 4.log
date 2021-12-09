@@ -1,0 +1,181 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.14)  9 DEC 2021 08:32
+entering extended mode
+**"c:/Users/rassod/Documents/MathInitLatex-1/Algebraic Identities Part 4.tex"
+(c:/Users/rassod/Documents/MathInitLatex-1/Algebraic Identities Part 4.tex
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01> (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks18
+\labelindent=\skip49
+\enit@outerparindent=\dimen139
+\enit@toks=\toks19
+\enit@inbox=\box50
+\enit@count@id=\count190
+\enitdp@description=\count191
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen140
+)) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count192
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count193
+\leftroot@=\count194
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count195
+\DOTSCASE@=\count196
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count197
+\c@MaxMatrixCols=\count198
+\dotsspace@=\muskip16
+\c@parentequation=\count199
+\dspbrk@lvl=\count266
+\tag@help=\toks21
+\row@=\count267
+\column@=\count268
+\maxfields@=\count269
+\andhelp@=\toks22
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks30
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/06/02 3.60 The Babel package
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/06/02 3.60 Babel common definitions
+\babel@savecnt=\count270
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count271
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+\c@theorem=\count272
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count273
+\l__pdf_internal_box=\box53
+) (Algebraic Identities Part 4.aux)
+\openout1 = `"Algebraic Identities Part 4.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+ (C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/rassod/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (Algebraic Identities Part 4.aux) ) 
+Here is how much of TeX's memory you used:
+ 2789 strings out of 478864
+ 39786 string characters out of 2848186
+ 358321 words of memory out of 3000000
+ 20716 multiletter control sequences out of 15000+600000
+ 411639 words of font info for 59 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,10n,66p,304b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Algebraic Identities Part 4.pdf" (1 page, 125446 bytes).
+PDF statistics:
+ 66 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
