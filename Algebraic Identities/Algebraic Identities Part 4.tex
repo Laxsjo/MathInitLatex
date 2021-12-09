@@ -58,7 +58,25 @@
 	\end{align*}
 \end{proof}
 
+\subsection{
+	\normalfont
+	Let $x$, $y$ and $z$ be non-zero real numbers such that
+	\[x + y + z = a,\ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = \frac{1}{a}\]
+	Show that at least one of $x$, $y$, $z$ is equal to $a$.	
+}
+\linespread{1.5}\selectfont
+We begin by recognizing that either $a - x$, $a - y$ or $a - z$ is equal to zero. Thus we can rephrase the problem into proving that $ (a - x)(a - y)(a - z) = 0 $.
 
+Using the theorem we learned during the lesson we can expand the following expression.
+\[(a-x)(a-y)(a-z) = a^3 - (x + y + z)a^2 + (xy + yz + zx)a - xyz\]
+Substituting $a$ for $ x + y + z $, the expression $a^3 - a^3$ cancels out.
+\[(a-x)(a-y)(a-z) = (xy + yz + zx)a - xyz\]
+We divide $xy + yz + zx$ by $xyz$ and multiply it by $xyz$ to cancel out the division.
+\[(a-x)(a-y)(a-z) = xyz\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right)a - xyz\]
+Now we can substitute $ \frac{1}{a} $ for $ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} $ we get $ xyz\frac{a}{a} - xyz $. The fraction $ \frac{a}{a} $ cancels out, leading to $xyz - xyz$ also cancelling out.
+This leaves us with
+\[(a-x)(a-y)(a-z) = 0\]
+This proves that either $a - x$, $a - y$ or $a - z$ is equal to zero and therefore either $a$, $b$ or $c$ is equal to $a$.
 
 
 
