@@ -3,6 +3,7 @@
 \usepackage{enumitem}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage[english]{babel}
+\usepackage[a4paper, portrait, margin=1.2in]{geometry}
 % \usepackage{ntheorem}
 % \usepackage{theoremref}
 \usepackage{xifthen}
@@ -267,7 +268,30 @@ Which is the answer we set out to find.
 
 \subsection{
 	\normalfont
-	Solve the following equation
+	Solve the following equation.
+	\normalsize
+	\[ (x + 1)^{63} + (x + 1)^{62}(x - a) + (x + 1)^{61}(x - a)^2 + \cdots + (x + 1)^2(x - 1)^{61} + (x + 1)(x - 1)^{62} + (x - 1)^{63} = 0 \]
 }
+
+During the last lecture we learned about the following extension of the conjugate rule.
+\begin{theorem}\label{conjExt}
+	\[ a^n - b^n = (a - b)\sum_{k=1}^{n}a^{n-k}b^{k-1} \]
+	% \hint Multiply both sides of the equation by $2 = (x + 1) - (x - 1)$.
+\end{theorem}
+
+We begin by recognizing that the left hand side of our equation is almost the same as the right hand side of \thmref{conjExt},
+albeit with a missing multiplication by $a - b$.
+The expression $x + 1$ and $x - 1$ would take the place of $a$ and $b$ respectively.
+
+As stated, the only difference is that the expression from \thmref{conjExt} is multiplied by $a - b$,
+which we can easily fix by multiplying both sides of our equation by $(x + 1) - (x - 1)$.
+Since the right hand side of our equation is equal to $0$, it stays the same, giving us the following equation.
+\[ \size2((x + 1) - (x - 1)\size2)\size3((x + 1)^{63} + (x + 1)^{62}(x - a) + (x + 1)^{61}(x - a)^2 + \cdots + (x + 1)(x - 1)^{62} + (x - 1)^{63}\size3) = 0 \]
+Now that our equation is exactly the same as the one in \thmref{conjExt}, we can rewrite our equation into the following, more manageable, form.
+\[ (x + 1)^{64} - (x - 1)^{64} = 0 \]
+
+After moving $(x - 1)^{64}$ to the right hand side and taking the 64th root of both side we are left with two possibilities,
+either $x + 1 = x - 1$ or $x + 1 = -(x - 1)$. We can conclude that the first possibility has to be false since after rearraigning it we are left with the contradiction $1 = -1$, therefore possibility two is the only possibility.
+The second equation has the solution of $x = 0$, thusly giving us the value asked of us in the problem.
 
 \end{document}
