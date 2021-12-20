@@ -20,7 +20,6 @@
 \definecolor{MainColor}{hsb}{0, 0.8, 0.65}
 \definecolor{SubColor}{hsb}{0.01, 0.90, 0.45}
 \definecolor{SubSubColor}{hsb}{0.01, 0.90, 0.2}
-% \colorlet{SubColor}{Teal}
 
 % switch implementation from https://tex.stackexchange.com/questions/64131/implementing-switch-cases
 \newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
@@ -35,7 +34,6 @@
 \newcommand{\solution}{\subsubsection*{\textcolor{MainColor}{Solution}}}
 
 \newcounter{theoremcounter}
-% \newcounter{corollary}
 
 \newtheoremstyle{maintheorem}% name of the style to be used
 	{\topsep}% measure of space to leave above the theorem. E.g.: 3pt
@@ -46,16 +44,6 @@
 	{.}% punctuation between head and body
 	{ }% space after theorem head; " " = normal interword space
 	{\thmname{#1}\thmnumber{ #2}\textnormal{\thmnote{ (#3)}}}
-  
-% \newtheoremstyle{mainsolution}% name of the style to be used
-% 	{\topsep}% measure of space to leave above the theorem. E.g.: 3pt
-% 	{\topsep}% measure of space to leave below the theorem. E.g.: 3pt
-% 	{\normalfont}% name of font to use in the body of the theorem
-% 	{0pt}% measure of space to indent
-% 	{\color{SubColor}\bfseries}% name of head font
-% 	{}% punctuation between head and body
-% 	{ }% space after theorem head; " " = normal interword space
-% 	{\thmname{#1}\thmnumber{ #2}\textnormal{\thmnote{ (#3)}}}
 
 \theoremstyle{maintheorem}
 \newtheorem{theorem}[theoremcounter]{\textcolor{SubColor}{Theorem}}
@@ -92,21 +80,21 @@
 \section*{\color{MainColor}Problems} \label{section}
 
 \subsection{
-	\normalfont
-	Let $a, b$ and $c$ be real numbers where $a \neq b$. If $c^3 = a^3 + b^3 + 3abc$, prove that $c=a+b$.
+    \normalfont
+    Let $a, b$ and $c$ be real numbers where $a \neq b$. If $c^3 = a^3 + b^3 + 3abc$, prove that $c=a+b$.
 }
 
 \solution
 
 During the last lecture we learned about the following theorem and it's corollary.
 \begin{theorem}\label{thm1}
-	Let $a, b$ and $c$ be real numbers.
-	\[ a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca) \]
+    Let $a, b$ and $c$ be real numbers.
+    \[ a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca) \]
 \end{theorem}
 \begin{corollary}\label{cor1}
-	Let $a, b$ and $c$ be real numbers.
+    Let $a, b$ and $c$ be real numbers.
 
-	If $a^3 + b^3 + c^3 = 3abc$, then either $a = b = c$ or $a + b + c = 0$ is true.
+    If $a^3 + b^3 + c^3 = 3abc$, then either $a = b = c$ or $a + b + c = 0$ is true.
 \end{corollary}
 
 We start by rearrange the equation $ c^3 = a^3 + b^3 + 3abc $ into the following form:
@@ -116,10 +104,10 @@ This equation is now in the form of \corref{cor1}. Therefore we can conclude tha
 We know that $ -a = -b = -c $ is false since $a \neq b$. This leaves us with $-a - b + c = 0$, which we can easily rearrange into the form of $c = a + b$, thus proving the problem.
 
 \subsection{
-	\normalfont
-	Let $x$, $y$ and $z$ be nonzero real numbers such that
-	\[x + y + z = a,\ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = \frac{1}{a}\]
-	Show that at least one of $x$, $y$, $z$ is equal to $a$.
+    \normalfont
+    Let $x$, $y$ and $z$ be nonzero real numbers such that
+    \[x + y + z = a,\ \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = \frac{1}{a}\]
+    Show that at least one of $x$, $y$, $z$ is equal to $a$.
 }
 
 \solution
@@ -138,21 +126,21 @@ This leaves us with
 This proves that either $a - x$, $a - y$ or $a - z$ is equal to zero and therefore either $a$, $b$ or $c$ is equal to $a$.
 
 \subsection{
-	\normalfont
-	Solve the following system:
-	\begin{align*}
-		x + y + z       & = 10   \\
-		x^2 + y^2 + z^2 & = 100  \\
-		x^3 + y^3 + z^3 & = 1000
-	\end{align*}
+    \normalfont
+    Solve the following system:
+    \begin{align*}
+        x + y + z       & = 10   \\
+        x^2 + y^2 + z^2 & = 100  \\
+        x^3 + y^3 + z^3 & = 1000
+    \end{align*}
 }
 
 \solution
 
 During a past lecture we learned about the following theorem:
 \begin{theorem}\label{thm2}
-	Let $a, b$ and $c$ be real numbers.
-	\[ (a + b + c)^3 = a^3 + b^3 + c^3 + 3(a + b)(b + c)(c + a) \]
+    Let $a, b$ and $c$ be real numbers.
+    \[ (a + b + c)^3 = a^3 + b^3 + c^3 + 3(a + b)(b + c)(c + a) \]
 \end{theorem}
 
 Let's begin by writing out \thmref{thm2}.
@@ -168,21 +156,21 @@ Because the exponents in the terms $x^2$ and $y^2$ are both even, they are also 
 
 From this we can conclude that there are three different solutions to the original system:
 \begin{align*}
-	x & = 10 &  &           & y & = 10 &  &           & z & = 10 \\
-	y & = 0  &  & \text{or} & z & = 10 &  & \text{or} & x & = 0  \\
-	z & = 0  &  &           & x & = 10 &  &           & y & = 0
+    x & = 10 &  &           & y & = 10 &  &           & z & = 10 \\
+    y & = 0  &  & \text{or} & z & = 10 &  & \text{or} & x & = 0  \\
+    z & = 0  &  &           & x & = 10 &  &           & y & = 0
 \end{align*}
 
 \subsection{
-	\normalfont
-	Let $a, b$ and $c$ be real numbers such that $a + b + c = 0$. Show that $2(a^5 + b^5 + c^5) = 5abc(a^2 + b^2 + c^2)$.
+    \normalfont
+    Let $a, b$ and $c$ be real numbers such that $a + b + c = 0$. Show that $2(a^5 + b^5 + c^5) = 5abc(a^2 + b^2 + c^2)$.
 }
 
 \solution
 
 Since $a + b + c = 0$, we can derive the following equation using Theorem \thmref{thm1}, mentioned in Problem A.
 \begin{equation}\label{eq1}
-	abc = \frac{1}{3}(a^3 + b^3 + c^3)
+    abc = \frac{1}{3}(a^3 + b^3 + c^3)
 \end{equation}
 
 Let's consider the expression $5abc(a^2 + b^2 + c^2)$.
@@ -192,9 +180,9 @@ After expanding and factorising we are left with the following expression.
 
 Since $a + b + c = 0$, we can derive the following three equations.
 \begin{align*}
-	-a & = b + c \\
-	-b & = c + a \\
-	-c & = a + b
+    -a & = b + c \\
+    -b & = c + a \\
+    -c & = a + b
 \end{align*}
 Using these equations we substitute $-a, -b$ and $-c$ into our expression to get the expression $\frac{5}{3}(a^5 + b^5 + c^5 - a^2b^2c - ab^2c^2 - a^2bc^2)$.
 After factorising $abc$ we are left with the following result.
@@ -202,8 +190,8 @@ After factorising $abc$ we are left with the following result.
 
 We learned about the following theorem during a past lecture.
 \begin{theorem}\label{thm3}
-	Let $a, b$ and $c$ be real numbers.
-	\[ (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) \]
+    Let $a, b$ and $c$ be real numbers.
+    \[ (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) \]
 \end{theorem}
 Consider the equation $a + b + c = 0$. This means that the equation $(a + b + c)^2 = 0$ is also true.
 Using \thmref{thm3} we can modify the equation to get the equation $a^2 + b^2 + c^2 + 2(ab + bc + ca) = 0$, which after rearranging gives us the following result.
@@ -215,7 +203,7 @@ giving us the following result.
 
 As we derived this expression from the previous expression $5abc\size2(a^2 + b^2 + c^2\size2)$, the following equation holds true.
 \begin{equation*}
-	5abc\size2(a^2 + b^2 + c^2\size2) = \frac{5}{3}\size2(a^5 + b^5 + c^5\size2) + \frac{5}{6}abc\size2(a^2 + b^2 + c^2\size2)
+    5abc\size2(a^2 + b^2 + c^2\size2) = \frac{5}{3}\size2(a^5 + b^5 + c^5\size2) + \frac{5}{6}abc\size2(a^2 + b^2 + c^2\size2)
 \end{equation*}
 
 Multiplying the preceding equation by $\frac{6}{5}$ and then simplifying it gives us the resulting equation $2(a^5 + b^5 + c^5) = 5abc(a^2 + b^2 + c^2)$,
@@ -223,10 +211,10 @@ which is the equation we set out to prove.
 
 
 \subsection{
-	\normalfont
-	Let $a, b$ and $c$ be nonzero real numbers such that $a + b + c = 0$ and $a^3 + b^3 + c^3 = a^5 + b^5 + c^5$.
-	Determine the exact value of $a^2 + b^2 + c^2$.
-	\hint Expand $(a^2 + b^2 + c^2)(a^3 + b^3 + c^3)$
+    \normalfont
+    Let $a, b$ and $c$ be nonzero real numbers such that $a + b + c = 0$ and $a^3 + b^3 + c^3 = a^5 + b^5 + c^5$.
+    Determine the exact value of $a^2 + b^2 + c^2$.
+    \hint Expand $(a^2 + b^2 + c^2)(a^3 + b^3 + c^3)$
 }
 
 \solution
@@ -244,21 +232,21 @@ Substituting this into our previous equation and factorising out $abc$, we get t
 Using \corref{cor1} we will substitute $3abc$ for $a^3 + b^3 + c^3$ and then divide both sides by 3abc,
 giving us the following equation.
 \begin{equation}\label{eq2}
-	a^2 + b^2 + c^2 = 1 - \frac{ab + bc + ca}{3}
+    a^2 + b^2 + c^2 = 1 - \frac{ab + bc + ca}{3}
 \end{equation}
 
 To continue we first have to find $ab + bc + ca$.
 But we're going to need to introduce the following theorem first.
 \begin{theorem}\label{thm4}
-	Let $a, b$ and $x$ be real numbers.
-	\[ (x + a)(x + b) = x^2 + (a + b)x + ab \]
+    Let $a, b$ and $x$ be real numbers.
+    \[ (x + a)(x + b) = x^2 + (a + b)x + ab \]
 \end{theorem}
 Using the equations established previously, we replace $a$, $b$ and $c$ with $-b-c$, $-c-a$ and $-a-b$ respectively,
 giving us the following equation after expanding it.
 \[ ab + bc + ca = a^2 + b^2 + c^2 + a(b + c) + b(a + c) + c(a + b) + ab + bc + ca \]
 That after simplifying gives us this equation.
 \begin{equation}\label{eq3}
-	ab + bc + ca = -\frac{a^2 + b^2 + c^2}{2}
+    ab + bc + ca = -\frac{a^2 + b^2 + c^2}{2}
 \end{equation}
 
 We can now use \eqref{eq3} to replace $ab + bc + ca$ in \eqref{eq2}, giving us the resulting equation $ a^2 + b^2 + c^2 = 1 + \frac{a^2 + b^2 + c^2}{6}$.
@@ -267,16 +255,16 @@ After rearranging this equation we are left with the following equation.
 Which is the answer we set out to find.
 
 \subsection{
-	\normalfont
-	Solve the following equation.
-	\normalsize
-	\[ (x + 1)^{63} + (x + 1)^{62}(x - a) + (x + 1)^{61}(x - a)^2 + \cdots + (x + 1)^2(x - 1)^{61} + (x + 1)(x - 1)^{62} + (x - 1)^{63} = 0 \]
+    \normalfont
+    Solve the following equation.
+    \normalsize
+    \[ (x + 1)^{63} + (x + 1)^{62}(x - 1) + (x + 1)^{61}(x - 1)^2 + \cdots + (x + 1)^2(x - 1)^{61} + (x + 1)(x - 1)^{62} + (x - 1)^{63} = 0 \]
 }
 
 During the last lecture we learned about the following extension of the conjugate rule.
 \begin{theorem}\label{conjExt}
-	\[ a^n - b^n = (a - b)\sum_{k=1}^{n}a^{n-k}b^{k-1} \]
-	% \hint Multiply both sides of the equation by $2 = (x + 1) - (x - 1)$.
+    \[ a^n - b^n = (a - b)\sum_{k=1}^{n}a^{n-k}b^{k-1} \]
+    % \hint Multiply both sides of the equation by $2 = (x + 1) - (x - 1)$.
 \end{theorem}
 
 We begin by recognizing that the left hand side of our equation is almost the same as the right hand side of \thmref{conjExt},
@@ -286,7 +274,7 @@ The expression $x + 1$ and $x - 1$ would take the place of $a$ and $b$ respectiv
 As stated, the only difference is that the expression from \thmref{conjExt} is multiplied by $a - b$,
 which we can easily fix by multiplying both sides of our equation by $(x + 1) - (x - 1)$.
 Since the right hand side of our equation is equal to $0$, it stays the same, giving us the following equation.
-\[ \size2((x + 1) - (x - 1)\size2)\size3((x + 1)^{63} + (x + 1)^{62}(x - a) + (x + 1)^{61}(x - a)^2 + \cdots + (x + 1)(x - 1)^{62} + (x - 1)^{63}\size3) = 0 \]
+\[ \size2((x + 1) - (x - 1)\size2)\size3((x + 1)^{63} + (x + 1)^{62}(x - 1) + (x + 1)^{61}(x - 1)^2 + \cdots + (x + 1)(x - 1)^{62} + (x - 1)^{63}\size3) = 0 \]
 Now that our equation is exactly the same as the one in \thmref{conjExt}, we can rewrite our equation into the following, more manageable, form.
 \[ (x + 1)^{64} - (x - 1)^{64} = 0 \]
 
