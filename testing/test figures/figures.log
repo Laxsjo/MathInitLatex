@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.14)  20 DEC 2021 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.14)  21 DEC 2021 12:22
 entering extended mode
 **"c:/Users/rassod/Documents/MathInitLatex-1/testing/test figures/figures.tex"
 (c:/Users/rassod/Documents/MathInitLatex-1/testing/test figures/figures.tex
@@ -728,19 +728,19 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/rassod/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (figures.aux) ) 
+{C:/Users/rassod/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (figures.aux) ) 
 Here is how much of TeX's memory you used:
  22957 strings out of 478864
  483250 string characters out of 2848186
- 805298 words of memory out of 3000000
+ 808298 words of memory out of 3000000
  40325 multiletter control sequences out of 15000+600000
  411293 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,8n,136p,503b,1136s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on figures.pdf (1 page, 101602 bytes).
+Output written on figures.pdf (2 pages, 105222 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
