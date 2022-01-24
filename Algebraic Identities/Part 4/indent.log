@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-INFO:  latexindent.pl version 3.13.2, 2021-11-15, a script to indent .tex files
-       latexindent.pl lives here: C:/Users/rassod/AppData/Local/Programs/MiKTeX/scripts/latexindent/
-       Wed Jan 19 08:23:29 2022
-       Filename: c:/Users/rassod/Documents/MathInitLatex-1/Factorizing Polynomials/Part 1/__latexindent_temp.tex
-INFO:  Processing switches:
-       -y|--yaml: YAML settings specified via command line
-       -c|--cruft: cruft directory
-INFO:  Directory for backup files and c:/Users/rassod/Documents/MathInitLatex-1/Algebraic Identities/Part 4//indent.log: c:/Users/rassod/Documents/MathInitLatex-1/Algebraic Identities/Part 4/
-=======
 INFO:  latexindent.pl version 3.14, 2022-01-08, a script to indent .tex files
        latexindent.pl lives here: C:/Users/Rasmus/AppData/Local/Programs/MiKTeX/scripts/latexindent/
        Tue Jan 18 12:26:26 2022
@@ -16,7 +6,6 @@ INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
 INFO:  Directory for backup files and d:/Rasmus/Documents/Github/MathInitLatex/Algebraic Identities/Part 4//indent.log: d:/Rasmus/Documents/Github/MathInitLatex/Algebraic Identities/Part 4/
->>>>>>> 1bb2bbd43577de81abd2c5e425ff9c12ca3b7b00
 INFO:  Perl modules are being loaded from the following directories:
        C:/Strawberry/perl/lib/FindBin.pm
        C:/Strawberry/perl/vendor/lib/YAML/Tiny.pm
