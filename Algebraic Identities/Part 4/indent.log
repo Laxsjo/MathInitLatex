@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO:  latexindent.pl version 3.13.2, 2021-11-15, a script to indent .tex files
        latexindent.pl lives here: C:/Users/rassod/AppData/Local/Programs/MiKTeX/scripts/latexindent/
        Wed Jan 19 08:23:29 2022
@@ -6,6 +7,16 @@ INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
 INFO:  Directory for backup files and c:/Users/rassod/Documents/MathInitLatex-1/Algebraic Identities/Part 4//indent.log: c:/Users/rassod/Documents/MathInitLatex-1/Algebraic Identities/Part 4/
+=======
+INFO:  latexindent.pl version 3.14, 2022-01-08, a script to indent .tex files
+       latexindent.pl lives here: C:/Users/Rasmus/AppData/Local/Programs/MiKTeX/scripts/latexindent/
+       Tue Jan 18 12:26:26 2022
+       Filename: d:/Rasmus/Documents/Github/MathInitLatex/Factorizing Polynomials/Part 1/__latexindent_temp.tex
+INFO:  Processing switches:
+       -y|--yaml: YAML settings specified via command line
+       -c|--cruft: cruft directory
+INFO:  Directory for backup files and d:/Rasmus/Documents/Github/MathInitLatex/Algebraic Identities/Part 4//indent.log: d:/Rasmus/Documents/Github/MathInitLatex/Algebraic Identities/Part 4/
+>>>>>>> 1bb2bbd43577de81abd2c5e425ff9c12ca3b7b00
 INFO:  Perl modules are being loaded from the following directories:
        C:/Strawberry/perl/lib/FindBin.pm
        C:/Strawberry/perl/vendor/lib/YAML/Tiny.pm
@@ -15,6 +26,7 @@ INFO:  Perl modules are being loaded from the following directories:
        C:/Strawberry/perl/vendor/lib/File/HomeDir.pm
        C:/Strawberry/perl/vendor/lib/Unicode/GCString.pm
 INFO:  LatexIndent perl modules are being loaded from, for example:
+<<<<<<< HEAD
        C:/Users/rassod/AppData/Local/Programs/MiKTeX/scripts/latexindent/LatexIndent/Document.pm
 INFO:  YAML settings read: defaultSettings.yaml
        Reading defaultSettings.yaml from C:/Users/rassod/AppData/Local/Programs/MiKTeX/scripts/latexindent/defaultSettings.yaml
@@ -22,6 +34,15 @@ INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
        Home directory is C:\Users\rassod (didn't find either indentconfig.yaml or .indentconfig.yaml)
        To specify user settings you would put indentconfig.yaml here: C:\Users\rassod/indentconfig.yaml
        Alternatively, you can use the hidden file .indentconfig.yaml as: C:\Users\rassod/.indentconfig.yaml
+=======
+       C:/Users/Rasmus/AppData/Local/Programs/MiKTeX/scripts/latexindent/LatexIndent/Document.pm
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from C:/Users/Rasmus/AppData/Local/Programs/MiKTeX/scripts/latexindent/defaultSettings.yaml
+INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
+       Home directory is C:\Users\Rasmus (didn't find either indentconfig.yaml or .indentconfig.yaml)
+       To specify user settings you would put indentconfig.yaml here: C:\Users\Rasmus/indentconfig.yaml
+       Alternatively, you can use the hidden file .indentconfig.yaml as: C:\Users\Rasmus/.indentconfig.yaml
+>>>>>>> 1bb2bbd43577de81abd2c5e425ff9c12ca3b7b00
 INFO:  YAML settings read: -y switch
        YAML setting: defaultIndent:'    '
        single-quoted string found in -y switch: '    ', substitute to     

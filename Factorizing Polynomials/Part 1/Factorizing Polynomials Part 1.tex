@@ -1,0 +1,107 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[english]{babel}
+\usepackage[a4paper, portrait, margin=1.2in]{geometry}
+% \usepackage{ntheorem}
+% \usepackage{theoremref}
+\usepackage{xifthen}
+\usepackage{relsize}
+\usepackage[svgnames]{xcolor} % You can find CSS colours here https://www.w3schools.com/cssref/css_colors.asp
+
+\title{Factorizing Polynomials Part 1}
+\author{Rasmus Söderhielm}
+\date{January 2022}
+
+% \parindent 20pt
+% \parskip 1em
+
+\definecolor{MainColor}{hsb}{0, 0.8, 0.65}
+\definecolor{SubColor}{hsb}{0.01, 0.90, 0.45}
+\definecolor{SubSubColor}{hsb}{0.01, 0.90, 0.2}
+
+% switch implementation from https://tex.stackexchange.com/questions/64131/implementing-switch-cases
+\newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
+\newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite...
+\newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
+
+\newcommand{\hint}{\\\textcolor{SubColor}{{H}{\relsize{-1}INT:}}\ }
+
+
+
+\renewcommand*{\thesubsection}{\textcolor{MainColor}{\Alph{subsection}}}
+\newcommand{\solution}{\subsubsection*{\textcolor{MainColor}{Solution}}}
+
+\newcounter{theoremcounter}
+
+\newtheoremstyle{maintheorem}% name of the style to be used
+	{\topsep}% measure of space to leave above the theorem. E.g.: 3pt
+	{\topsep}% measure of space to leave below the theorem. E.g.: 3pt
+	{\itshape}% name of font to use in the body of the theorem
+	{0pt}% measure of space to indent
+	{\color{SubColor}\bfseries}% name of head font
+	{.}% punctuation between head and body
+	{ }% space after theorem head; " " = normal interword space
+	{\thmname{#1}\thmnumber{ #2}\textnormal{\thmnote{ (#3)}}}
+
+\theoremstyle{maintheorem}
+\newtheorem{theorem}[theoremcounter]{\textcolor{SubColor}{Theorem}}
+\newtheorem{corollary}{\textcolor{SubColor}{Corollary}}
+
+
+\newcommand{\thmref}[1]{\textcolor{SubSubColor}{\textbf{Theorem \ref{#1}}}}
+\newcommand{\corref}[1]{\textcolor{SubSubColor}{\textbf{Corollary \ref{#1}}}}
+\renewcommand{\eqref}[1]{\textcolor{SubSubColor}{\textbf{Equation \ref{#1}}}}
+
+% \theoremstyle{mainsolution}
+% \newtheorem*{solution}{Solution}
+
+
+
+\newcommand{\size}[2]{
+	\begin{switch}{#1}
+		\case{1}{#2}
+		\case{2}{\bigl#2}
+		\case{3}{\Bigl#2}
+		\case{4}{\biggl#2}
+		\case{5}{\Biggl#2}
+	\end{switch}
+}
+
+\setlength{\parskip}{0.8em}
+
+\begin{document}
+
+\linespread{1.5}\selectfont
+
+\maketitle
+
+\section{\color{MainColor}What we have Leared}
+During the last lecture we were introduced to the concept of factorizing polynomials.
+We were taught about two different methods for doing said factorization.
+
+\subsection*{Method 1.}
+Pulling out common factors.
+
+\subsection*{Method 2.}
+Using identities.
+\subsubsection*{The Quadratic Identity}
+\[a^2 \pm 2ab + b^2 = (a\pm b)^2\]
+\subsubsection*{The Conjugate Identity}
+\[a^2 - b^2 = (a + b)(a - b)\]
+
+
+\section{\color{MainColor}Problems}
+
+\subsection{
+	\normalfont
+	Factorize the following polynomials
+}
+\subsubsection{
+	\normalfont
+	$7x^3y^3z - 21x^2y^3z^3 - 35x^4y^2z^6$
+}
+
+\end{document}
