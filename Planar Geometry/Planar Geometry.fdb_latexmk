@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1642773953 "c:/Users/rassod/Documents/MathInitLatex-1/Planar Geometry/Planar Geometry.tex" "Planar Geometry.pdf" "Planar Geometry" 1642773957
+["pdflatex"] 1643030563 "c:/Users/rassod/Documents/MathInitLatex-1/Planar Geometry/Planar Geometry.tex" "Planar Geometry.pdf" "Planar Geometry" 1643030568
   "C:/Users/rassod/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1631608153 9743325 fc08d82e4be5bb859a79842e8f8ab628 ""
   "C:/Users/rassod/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1639752129 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -30,6 +30,7 @@
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247593067 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247593066 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Users/rassod/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247593066 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.def" 1622643913 121009 d797444026f7ec580bc6c8aa432a71ab ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1622643913 38293 26f2f602aa9980977a58a9f27958a46e ""
@@ -224,9 +225,9 @@
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1623002060 4620 ef4794ae13f75d0c199ba494bc41ff4b ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623002060 55589 34128738f682d033422ca125f82e5d62 ""
   "C:/Users/rassod/AppData/Local/Programs/MiKTeX/tex/latex/xifthen/xifthen.sty" 1448274436 5689 1bfa68243e89a54479e7d0580773c57e ""
-  "Planar Geometry.aux" 1642773956 611 f3e4a5c19904f8e6a712d4178fd2b0cc "pdflatex"
-  "Planar Geometry.tex" 1642773952 4469 6beea5d333faf12f528e3874b77463dd ""
-  "c:/Users/rassod/Documents/MathInitLatex-1/Planar Geometry/Planar Geometry.tex" 1642773952 4469 6beea5d333faf12f528e3874b77463dd ""
+  "Planar Geometry.aux" 1643030568 611 f3e4a5c19904f8e6a712d4178fd2b0cc "pdflatex"
+  "Planar Geometry.tex" 1643030562 4629 6a7d93de3a57e0bd8fb70b23ef759eb0 ""
+  "c:/Users/rassod/Documents/MathInitLatex-1/Planar Geometry/Planar Geometry.tex" 1643030562 4629 6a7d93de3a57e0bd8fb70b23ef759eb0 ""
   (generated)
   "Planar Geometry.aux"
   "Planar Geometry.log"
