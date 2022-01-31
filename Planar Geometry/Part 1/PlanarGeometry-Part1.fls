@@ -1,7 +1,7 @@
-PWD c:\Users\rassod\Documents\MathInitLatex-1\Planar Geometry
+PWD c:\Users\rassod\Documents\MathInitLatex-1\Planar Geometry\Part 1
 INPUT C:\Users\rassod\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\rassod\Documents\MathInitLatex-1\Planar Geometry\Planar Geometry.tex
-OUTPUT Planar Geometry.log
+INPUT c:\Users\rassod\Documents\MathInitLatex-1\Planar Geometry\Part 1\PlanarGeometry-Part1.tex
+OUTPUT PlanarGeometry-Part1.log
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -603,7 +603,7 @@ INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlaye
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfadings.code.tex
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
-OUTPUT Planar Geometry.pdf
+OUTPUT PlanarGeometry-Part1.pdf
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.misc.code.tex
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.misc.code.tex
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.misc.code.tex
@@ -905,10 +905,10 @@ INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.s
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT .\Planar Geometry.aux
-INPUT Planar Geometry.aux
-INPUT Planar Geometry.aux
-OUTPUT Planar Geometry.aux
+INPUT .\PlanarGeometry-Part1.aux
+INPUT PlanarGeometry-Part1.aux
+INPUT PlanarGeometry-Part1.aux
+OUTPUT PlanarGeometry-Part1.aux
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -957,7 +957,9 @@ INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sy
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\PlanarGeometry-Part1.toc
+INPUT PlanarGeometry-Part1.toc
+INPUT PlanarGeometry-Part1.toc
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
@@ -966,9 +968,12 @@ INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sy
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+OUTPUT PlanarGeometry-Part1.toc
+INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\rassod\AppData\Local\MiKTeX\pdftex\config\pdftex.map
-INPUT Planar Geometry.aux
+INPUT PlanarGeometry-Part1.aux
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -983,5 +988,9 @@ INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\rassod\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
