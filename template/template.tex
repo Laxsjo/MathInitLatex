@@ -11,6 +11,18 @@
 \usepackage{relsize}
 \usepackage[svgnames]{xcolor} % You can find CSS colours here https://www.w3schools.com/cssref/css_colors.asp
 
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{subcaption}
+% \usepackage{showframe} % Useful for debugging
+
+\usepackage{titlesec}
+\definecolor{MainColor}{hsb}{0, 0.8, 0.65}
+\definecolor{SubColor}{hsb}{0.01, 0.90, 0.45}
+\definecolor{SubSubColor}{hsb}{0.01, 0.90, 0.2}
+% \usepackage[labelfont={color=SubColor,bf}]{caption}
+\usepackage[labelfont={color=SubColor,bf}]{caption}
+
 \title{Algebraic Identities Part 4}
 \author{Rasmus Söderhielm}
 \date{December 2021}
@@ -54,6 +66,7 @@
 \newcommand{\thmref}[1]{\textcolor{SubSubColor}{\textbf{Theorem \ref{#1}}}}
 \newcommand{\corref}[1]{\textcolor{SubSubColor}{\textbf{Corollary \ref{#1}}}}
 \renewcommand{\eqref}[1]{\textcolor{SubSubColor}{\textbf{Equation \ref{#1}}}}
+\newcommand{\figref}[1]{\textcolor{SubSubColor}{\textbf{Figure \ref{#1}}}}
 
 % \theoremstyle{mainsolution}
 % \newtheorem*{solution}{Solution}

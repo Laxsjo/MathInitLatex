@@ -4,6 +4,7 @@
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage[english]{babel}
 \usepackage[a4paper, portrait, margin=1.2in]{geometry}
+\usepackage{graphicx}
 % \usepackage{ntheorem}
 % \usepackage{theoremref}
 \usepackage{xifthen}
@@ -12,7 +13,9 @@
 
 \usepackage{tkz-euclide}
 \usepackage{tikz}
-% \usepackage{showframe} % Useful for debugging
+\usepackage{subcaption}
+% \usepackage{subfig}
+\usepackage{showframe} % Useful for debugging
 
 \usepackage{titlesec}
 % \usepackage{caption}
@@ -113,26 +116,92 @@ Given a line and a point not lying on said line, there is one and \emph{only one
 
 \begin{figure}[h]\label{ParallelFig}
     \centering
-    \begin{tikzpicture}[x=1cm, y=1cm]
-        \tkzDefPoint(-1, 0){L_1}
-        \tkzDefPoint(1, 0){L_2}
-        \tkzDefPoint(0, 1){A}
-        \tkzDefPoint(-1, 1){A_1}
-        \tkzDefPoint(1, 1){A_2}
 
-        \tkzDrawLine[add=1 and 1](L_1, L_2)
+    \begin{minipage}{7cm}%
+        \centering
+        \raisebox{-0.5\height}{
+            \begin{tikzpicture}[x=1cm, y=1cm]
+                \tkzDefPoint(-1, 0){L_1}
+                \tkzDefPoint(1, 0){L_2}
+                \tkzDefPoint(0, 1){A}
+                \tkzDefPoint(-1, 1){A_1}
+                \tkzDefPoint(1, 1){A_2}
 
-        \tkzDrawLine[add=1 and 1, dashed](A_1,A_2)
-        \tkzDrawPoints(A)
-        \tkzLabelPoints(A)
-    \end{tikzpicture}
+                \tkzDrawLine[add=1 and 1](L_1, L_2)
+                \tkzLabelLine[pos=2, right](L_1, L_2){$l_1$}
+
+                \tkzDrawLine[add=1 and 1, dashed](A_1,A_2)
+                \tkzLabelLine[pos=2, right](A_1, A_2){$l_2$}
+                \tkzDrawPoints(A)
+                \tkzLabelPoints(A)
+            \end{tikzpicture}
+        }
+    \end{minipage}
+    \begin{minipage}{1.5cm}%
+        \raisebox{-0.5\height}{
+            $l_1 \parallel l_2$
+        }
+    \end{minipage}
 
     \caption{An example illustrating \textbf{The Axiom of Parallels}.}
 \end{figure}
 
-\subsubsection{The Axiom of Corresponding Angles}
+\subsubsection{The Axiom of Corresponding Angles}\label{CorresSect}
 Let $l_1$ and $l_2$ be two parallel lines.
-Given another line that intersect the pair, the two angles formed by these intersections, $\alpha_1$ and $\alpha_2$, will be equal.
+Given a \emph{transversal} that intersects the pair, two \emph{corresponding} angles formed by these intersections, $\alpha_1$ and $\alpha_2$, will be equal.
+
+\begin{figure}[h]\label{CorresFig}
+    \centering
+    \begin{minipage}{5.2cm}%
+        % \raggedright
+        \raisebox{-0.5\height}{
+            \fbox{
+                \begin{tikzpicture}
+
+                    \tkzDefPoint(-1, 0){A_1}
+                    \tkzDefPoint(1, 0){A_2}
+                    \tkzDefPoint(-1, 1){B_1}
+                    \tkzDefPoint(1, 1){B_2}
+
+                    \tkzDefPoint(-0.25, 0){l_1}
+                    \tkzDefPoint(0.25, 1){l_2}
+
+                    \tkzDefPointOnLine[pos=1.5](l_1,l_2)\tkzGetPoint{l_3}
+                    \tkzDefPointOnLine[pos=-1.5](l_1,l_2)\tkzGetPoint{l_4}
+
+                    \tkzDrawLine[add=0.6 and 0.6](A_1,A_2)
+                    \tkzLabelLine[pos=1.6, right](A_1,A_2){$l_1$}
+                    \tkzDrawLine[add=0.6 and 0.6](B_1,B_2)
+                    \tkzLabelLine[pos=1.6, right](B_1,B_2){$l_2$}
+
+                    \tkzDrawLine[add=0.4 and 0.7](l_1,l_2)
+                    % \tkzLabelLine[pos=1.25, right](l_1, l_2){$$}
+
+                    \tkzMarkAngle[size=0.4](A_2,l_1,l_2)
+                    \tkzLabelAngle[pos=0.7](A_2,l_1,l_2){$\alpha_1$}
+
+                    \tkzMarkAngle[size=0.4](B_2,l_2,l_3)
+                    \tkzLabelAngle[pos=0.7](B_2,l_2,l_3){$\alpha_2$}
+
+                \end{tikzpicture}
+            }
+        }
+    \end{minipage}
+    \begin{minipage}{2cm}%
+        % \raggedleft
+        \raisebox{-0.5\height}{
+            \fbox{
+                \begin{minipage}{2cm}%
+                    \[l_1 \parallel l_2\]
+                    \[\alpha_1 = \alpha_2\]
+                \end{minipage}
+            }
+        }
+    \end{minipage}
+    \caption{\textbf{The Axiom of Corresponding Angles}.}
+\end{figure}
+
+hi
 
 
 \section*{\color{MainColor}Problems} \label{Problems}
